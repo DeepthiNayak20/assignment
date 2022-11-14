@@ -1,0 +1,53 @@
+.userName {
+    font-size: 2rem;
+    border: 2px solid #0098ffe6;
+    border-radius: 6px;
+    width: 93vw;
+}
+
+.addBtn {
+    color: black;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+
+.addBtn:hover {
+    color: white;
+    background-color: green;
+}
+
+.buttonAdd {
+    padding: 2rem 0rem;
+    border-bottom: 1px solid #00000040;
+}
+
+.itemContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+button.deleteButton {
+    font-size: 1.5rem;
+    background-color: #ed4747;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+}
+
+.displayUsername {
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+
+.inputField {
+    display: flex;
+    justify-content: center;
+}
