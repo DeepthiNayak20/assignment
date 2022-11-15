@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./common.css";
 import { useDispatch } from "react-redux";
-import { addData } from "../redux/dataSlice";
+import { addDataAsync } from "../redux/dataSlice";
 
 const AddForm = () => {
   const [data, setData] = useState("");
@@ -10,8 +10,7 @@ const AddForm = () => {
 
   const onSubmit = (e: any) => {
     e.preventDefault();
-    // console.log("data", data);
-    displatch(addData({ userName: data }));
+    displatch(addDataAsync({ userName: data }));
   };
   return (
     <div>
@@ -20,6 +19,8 @@ const AddForm = () => {
           <input
             type="text"
             className="userName"
+            placeholder=" Add Deatils..."
+            required
             value={data}
             onChange={(e) => {
               setData(e.target.value);

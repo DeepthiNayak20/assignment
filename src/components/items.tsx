@@ -1,12 +1,12 @@
 import "./common.css";
 import { useDispatch } from "react-redux";
-import { deleteData } from "../redux/dataSlice";
+import { deleteDataAsync } from "../redux/dataSlice";
 
 const Items = (props: any) => {
   const dispatch = useDispatch();
   const handleDelete = () => {
     dispatch(
-      deleteData({
+      deleteDataAsync({
         id: props.id,
       })
     );
@@ -17,7 +17,7 @@ const Items = (props: any) => {
         <div className="displayUsername">{props.userName}</div>
         <div className="btnDel">
           <button className="deleteButton" onClick={handleDelete}>
-            Delete
+            Remove
           </button>
         </div>
       </div>

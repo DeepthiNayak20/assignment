@@ -3,7 +3,7 @@
     border: 2px solid #0098ffe6;
     border-radius: 6px;
     padding: 1rem;
-    width: 93vw;
+    width: 100vw;
 }
 
 .addBtn {
@@ -11,7 +11,7 @@
     font-size: 1.5rem;
     padding: 10px;
     background-color: transparent;
-    border: 1px solid green;
+    border: 1px solid #0080006b;
     border-radius: 4px;
 }
 
@@ -22,21 +22,20 @@
 
 .buttonAdd {
     padding: 2rem 0rem;
-    /* border-bottom: 1px solid #00000040; */
-    margin-left: 2rem;
 }
 
 .itemContainer {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
-    border: 1px solid black;
+    padding: 0.4rem;
+    border: 1px solid #0000003b;
     border-radius: 4px;
-    margin: 0rem 2rem;
+    margin-top: 0.5rem;
+    align-items: center;
 }
 
 button.deleteButton {
-    font-size: 1.5rem;
+    font-size: 20px;
     background-color: #ed4747;
     border: none;
     outline: none;

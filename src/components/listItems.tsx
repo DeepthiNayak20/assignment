@@ -1,9 +1,15 @@
 import "./common.css";
 import Items from "./items";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { getDataAsync } from "../redux/dataSlice";
 
 const ListItems = () => {
+  const dispatch = useDispatch();
   const listData = useSelector((state: any) => state.counter);
+  useEffect(() => {
+    dispatch(getDataAsync());
+  }, [dispatch]);
 
   return (
     <div>
