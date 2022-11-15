@@ -1,18 +1,17 @@
 import "./common.css";
 import Items from "./items";
+import { useSelector } from "react-redux";
 
 const ListItems = () => {
-  const listData = [
-    { id: 1, userName: "aaa" },
-    { id: 2, userName: "bbb" },
-    { id: 3, userName: "ccc" },
-    { id: 4, userName: "ddd" },
-    { id: 5, userName: "eee" },
-  ];
+  const listData = useSelector((state: any) => state.counter);
+
   return (
     <div>
-      {listData.map((item: any) => (
-        <Items id={item.id} userName={item.userName} />
+      {listData.map((item: any, i: any) => (
+        <div key={i}>
+          {" "}
+          <Items id={item.id} userName={item.userName} />
+        </div>
       ))}
     </div>
   );

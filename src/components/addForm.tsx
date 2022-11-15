@@ -1,11 +1,17 @@
 import { useState } from "react";
 import "./common.css";
+import { useDispatch } from "react-redux";
+import { addData } from "../redux/dataSlice";
 
 const AddForm = () => {
   const [data, setData] = useState("");
+
+  const displatch = useDispatch();
+
   const onSubmit = (e: any) => {
     e.preventDefault();
-    console.log("data", data);
+    // console.log("data", data);
+    displatch(addData({ userName: data }));
   };
   return (
     <div>
